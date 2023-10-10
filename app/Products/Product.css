@@ -1,0 +1,90 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20rem;
+  margin-top: -48rem;
+  
+}
+
+.card {
+  flex: 0 1 calc(30% - 20px); /* Set card width to one-third of the container with spacing in between */
+  margin: 10px; /* Add spacing around each card */
+  padding: 20px;
+  border: 1px solid #ededed;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add a smooth transition effect */
+  cursor: pointer;
+  background-color: #fff;
+}
+.card:hover {
+  transform: translateY(-5px); /* Add a slight lift effect on hover */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Add a subtle shadow on hover */
+}
+
+.card-img {
+  width: 13rem;
+  height: 9rem;
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  margin-bottom: 1rem;
+}
+
+.card-reviews {
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.rating-star {
+  color: #d5ab55;
+}
+
+.total-reviews {
+  font-size: 0.9rem;
+  margin-left: 10px;
+}
+
+.card-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bag-icon {
+  color: #535353;
+}
+.icon_box {
+  padding: 10px 10px;
+  margin-top: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: 1;
+  background: #fff;
+  color: #cd1e76;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.icon_box:hover
+{
+    color: #fff;
+    background: #cd1e76;
+}
+.icon
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0%;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.bag-icon {
+  font-size: 24px; /* Adjust the size to your preference */
+  color: #cd1e76; /* Change the icon color */
+  transition: transform 0.3s ease, color 0.3s ease; /* Add transition effects */
+  cursor: pointer;
+}
+
+/* Add a hover effect to change the color and add a slight lift effect */
+.bag-icon:hover {
+  color: #ff4081; /* Change the color on hover */
+  transform: translateY(-3px); /* Add a slight lift effect on hover */
+}
